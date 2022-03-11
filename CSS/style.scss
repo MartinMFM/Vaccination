@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+body{
+    margin: 0 auto;
+    padding: 0;
+    display: grid;
+    grid-template-rows: 100px 500px 100px 1fr 500px 1fr 250px;
+}
+nav{
+    grid-row: 1 / span 1;
+}
+
+.title{
+    color: #2949c7;
+    font-family: Fredoka;
+    font-size: 25px;
+    margin-right: 600px;
+    font-weight: bold;
+}
+.navegations{
+    display: flex;
+    font-family: Fredoka;
+    color: gray;
+    justify-content: end; 
+    margin-right: 60px;
+    align-items: center;
+    &-btn{
+        width: 110px;
+        height: 40px;
+        background-color: #0e91e4;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        font-family: Fredoka;
+        font-size: 15px;
+        color: white;
+        box-shadow: 1px 5px 10px #bfbdbd;
+        transition: all .2s;
+        &:hover{
+            background-color: #3050cd;
+            transform: translateY(2px);
+        }
+    }
+}
+h2{
+    font-size: 15px;
+    padding: 15px;
+    cursor: pointer;
+    
+    &:hover{
+        background-color: #f1f1f1;
+    }
+}
+h1{
+    font-family: Roboto;
+    color:#1f3e72;
+    font-size: 40px;
+    font-weight: bold;
+}
+.inicio{
+    display: grid;
+    grid-row: 2 / span 1;
+    grid-template-columns: 1fr 1fr;
+    font-family: Fredoka;
+    &-texto{
+        padding: 50px;
+        color: #6d7b93;
+    }
+
+    &-img{
+        width: 100%;
+        height: 100%;
+        
+        &-1{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.marcas{
+    display: grid;
+    grid-row: 3 / span 1;
+
+    &-img{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        &--logo{
+            width: 200px;
+        }
+    }
+    
+    
+}
+
+.section1{
+    display: grid;
+    grid-row: 4 / span 1;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    font-family: Fredoka;
+    color: #6d7b93;
+    padding: 50px;
+    &--texto{
+        grid-column: 1 / 1;
+    }
+
+    &-cards{
+        display: grid;
+        grid-row: 5;
+        grid-column: 1 / -1;
+        &-title{
+            font-family: Fredoka;
+            color: #1f3e72;
+            font-size: 20px;
+            padding: 0 15px;
+            font-weight: bold;
+        }
+        &-texto{
+            font-size: 12px;
+            padding: 0 15px;
+        }
+        &-card{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            margin-top: 60px;
+        }
+        &--margin{
+            padding: 60px 0;
+            
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            transition: all .2s;
+            &:hover{
+                transform: translateY(3px);
+                box-shadow: 1px 5px 10px #bfbdbd;
+            }
+        }
+        
+    }
+}
+
+
+.section2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 5;
+    padding: 0 20px;
+    &-title{
+        grid-column: 2 / span 1;
+    }
+    &-texto{
+        grid-column: 2 / -1;
+        font-family: Fredoka;
+        color: #6d7b93;
+        font-size: 20px;
+    }
+
+    &-img{
+        grid-column: 1 / 1;
+        margin-top: -200px;
+        &--1{
+            width: 100%;
+        }
+    }
+}
+
+.section3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 6;
+    padding: 50px;
+
+    &-img{
+
+        &--1{
+            width: 100%;
+        }
+    }
+
+    &-title{
+        grid-column: 1 / span 1;
+    }
+    &-texto{
+        grid-column: 1 / span 1;
+        font-family: Fredoka;
+        color: #6d7b93;
+        font-size: 20px;
+    }
+
+    &-cards{
+        grid-column: 1 / span 1;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        font-family: Fredoka;
+        color: #1f3e72;
+        font-size: 20px;
+        grid-template-rows: 1fr 1fr;
+        &-card{
+            padding: 50px 0;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 50px;
+            transition: all .2s;
+
+            &:hover{
+                transform: translateY(3px);
+                box-shadow: 1px 5px 10px #bfbdbd;
+            }
+            &-btn{
+                margin-top: 20px;
+                display: flex;
+                justify-content: center;
+                width: 110px;
+                align-items: center;
+                height: 40px;
+                cursor: pointer;
+                background-color: #0e91e4;
+                border: none;
+                border-radius: 5px;
+                font-weight: bold;
+                font-family: Fredoka;
+                font-size: 15px;
+                color: white;
+                box-shadow: 1px 5px 10px #bfbdbd;
+                transition: all .2s;
+                &:hover{
+                    background-color: #3050cd;
+                    transform: translateY(2px);
+                }
+            }
+        }
+    }
+}
+
+footer{
+    grid-row: 7;
+    background-color: #eef3ff;
+    display: grid;
+    grid-template-columns: 500px 1fr;
+}
+
+.footer-section1{
+    grid-column: 1 / span 1;
+    color: #2949c7;
+    font-family: Fredoka;
+    font-size: 25px;
+    margin-right: 200px;
+    padding: 30px;
+    font-weight: bold;
+
+    &-texto{
+        font-family: Fredoka;
+        color: #6d7b93;
+        font-size: 15px;
+        font-weight: lighter;
+    }
+}
+
+.footer-section2{
+    display: grid;
+    font-family: Fredoka;
+        color: #6d7b93;
+        font-size: 15px;
+    &--about{
+        grid-column: 2 / span 1;
+    } 
+    &--company{
+        grid-column: 3 / span 1;
+    }   
+    &--support{
+        grid-column: 4 / span 1;
+    }   
+
+}
+h4{
+    color: #1f3e72;
+    font-family: Fredoka;
+    font-size: 25px;
+    font-weight: bold;
+}
